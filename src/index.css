@@ -401,3 +401,141 @@ color:white;
 .copyright{
 color:#666;
 }
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .brands-grid,
+  .cars-grid,
+  .services-grid,
+  .inventory-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-card {
+    padding: 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .container {
+    width: 95%;
+  }
+
+  .navbar .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .nav-btn {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .hero {
+    min-height: 100vh;
+    padding: 120px 20px 80px;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .brands-grid,
+  .cars-grid,
+  .services-grid,
+  .inventory-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading h2 {
+    font-size: 2rem;
+  }
+
+  .car-card img {
+    height: 220px;
+  }
+
+  .contact-card {
+    padding: 30px;
+  }
+
+  .contact-card h2 {
+    font-size: 2rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .hero-tag {
+    font-size: 0.8rem;
+    padding: 10px 16px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .brand-card,
+  .service-card,
+  .inventory-card,
+  .contact-card {
+    padding: 25px;
+  }
+
+  .footer h2 {
+    font-size: 2rem;
+  }
+
+  .nav-btn,
+  .primary-btn,
+  .secondary-btn,
+  .contact-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
